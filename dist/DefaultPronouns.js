@@ -1,6 +1,5 @@
 import { Pronoun } from "./Pronoun";
 import { PronounCodes } from "./PronounCodes";
-
 export const DefaultPronouns = {
   theyThem: new Pronoun(PronounCodes.theyThem),
   heHim: new Pronoun(PronounCodes.theyThem),

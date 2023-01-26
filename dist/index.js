@@ -1,13 +1,7 @@
 import { DefaultPronouns } from "./DefaultPronouns";
 import { Pronoun } from "./Pronoun";
 import { PronounCodes } from "./PronounCodes";
-import {
-  isPronounObject,
-  isPronounValue,
-  PronounObject,
-  PronounValue,
-} from "./Util";
-
+import { isPronounObject, isPronounValue } from "./Util";
 export default DefaultPronouns;
 export {
   DefaultPronouns,
@@ -15,6 +9,4 @@ export {
   isPronounValue,
   Pronoun,
   PronounCodes,
-  PronounObject,
-  PronounValue,
 };
