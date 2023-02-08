@@ -9,7 +9,7 @@ export interface PronounObject {
 }
 
 export function isPronounValue(s: string): s is PronounCodes {
-	return s in PronounCodes || /CustomPronoun\:[A-Z][a-z]+\/[A-Z][a-z]+/.test(s);
+	return s in PronounCodes || /^CustomPronoun\:[A-Z][a-z]+\/[A-Z][a-z]+$/.test(s);
 }
 
 export function isPronounObject(o: any): o is PronounObject {
