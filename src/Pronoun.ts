@@ -3,6 +3,7 @@ import { PronounValue, PronounObject } from './Util.js';
 
 export class Pronoun {
 	code: PronounCodes;
+	custom: boolean;
 	value: PronounValue;
 	constructor(code: PronounCodes, value?: PronounValue) {
 		this.code = code;
@@ -10,7 +11,10 @@ export class Pronoun {
 			throw new Error(
 				"Cannot accept 'value' parameter because 'code' parameter is not equal to 'PronounCodes.other'"
 			);
-		else this.value = value || this.code;
+		else {
+			this.value = value || this.code;
+		}
+		this.custom = !!value;
 	}
 	static fromJSON(json: PronounObject) {
 		if (json.value) {
@@ -25,6 +29,7 @@ export class Pronoun {
 		};
 	}
 	toString() {
-		return this.value;
+		if (this.custom) return this.value.slice(14);
+		else return this.value;
 	}
 }

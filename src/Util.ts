@@ -9,9 +9,12 @@ export interface PronounObject {
 }
 
 export function isPronounValue(s: string): s is PronounCodes {
-	return s in PronounCodes || /^CustomPronoun\:[A-Z][a-z]+\/[A-Z][a-z]+$/.test(s);
+	return (
+		['Any', 'He/Him', 'Other', 'She/Her', 'They/Them'].includes(s) ||
+		/^CustomPronoun\:[A-Z][a-z]+(\/[A-Z][a-z]+)+$/.test(s)
+	);
 }
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isPronounObject(o: any): o is PronounObject {
 	return 'prnnbjct' in o;
 }

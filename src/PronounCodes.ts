@@ -1,6 +1,8 @@
 export enum PronounCodes {
-	theyThem = 'They/Them',
+	// When changing this also change array in isPronounValue
+	any = 'Any',
 	heHim = 'He/Him',
-	sheHer = 'She/Her',
 	other = 'Other',
+	sheHer = 'She/Her',
+	theyThem = 'They/Them',
 }

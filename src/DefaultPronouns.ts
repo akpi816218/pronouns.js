@@ -2,8 +2,9 @@ import { Pronoun } from './Pronoun.js';
 import { PronounCodes } from './PronounCodes.js';
 
 export const DefaultPronouns = {
-	theyThem: new Pronoun(PronounCodes.theyThem),
-	heHim: new Pronoun(PronounCodes.theyThem),
-	sheHer: new Pronoun(PronounCodes.sheHer),
+	any: new Pronoun(PronounCodes.any),
+	heHim: new Pronoun(PronounCodes.heHim),
 	other: new Pronoun(PronounCodes.other),
+	sheHer: new Pronoun(PronounCodes.sheHer),
+	theyThem: new Pronoun(PronounCodes.theyThem),
 };
