@@ -4,6 +4,7 @@ export type PronounValue = PronounCodes | `CustomPronoun:${string}/${string}`;
 
 export interface PronounObject {
 	code: PronounCodes;
+	custom: boolean;
 	prnnbjct: 'PronounObject';
 	value?: PronounValue;
 }

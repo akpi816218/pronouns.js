@@ -24,6 +24,7 @@ export class Pronoun {
 	toJSON(): PronounObject {
 		return {
 			code: this.code,
+			custom: this.custom,
 			prnnbjct: 'PronounObject',
 			value: this.value,
 		};
