@@ -4,4 +4,4 @@ A simple and lightweight JavaScript library for managing and creating pronouns. 
 
 Contibutions welcome.
 
-See [`docs/index.md`](docs/index.md) for documentation.
+See [`docs/index.md`](docs) for documentation.

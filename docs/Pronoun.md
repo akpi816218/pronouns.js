@@ -1,4 +1,4 @@
-# `class Pronoun` Docs
+# Documentation: `class Pronoun`
 
 Constructor:
 `new Pronoun(code: PronounCodes, value?: PronounValue)`
@@ -21,4 +21,4 @@ Properties:
 `custom: boolean`:
 Returns whether or not this is custom
 
-[Back to main documentation](..)
+[Back to main documentation](.)
