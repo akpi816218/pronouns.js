@@ -1,5 +1,7 @@
 # Pronouns.js Docs
 
+[`class Pronoun`](Pronoun)
+
 `DefaultPronouns`:
 Returns an object of commonly used (not custom) `Pronoun`s.
 
