@@ -4,9 +4,10 @@
 		"forceConsistentCasingInFileNames": true,
 		"module": "ESNext",
 		"moduleResolution": "nodenext",
+		"noEmit": true,
 		"outDir": "dist",
-		"strict": true,
 		"skipLibCheck": true,
-		"target": "esnext"
+		"strict": true,
+		"target": "ESNext"
 	}
 }

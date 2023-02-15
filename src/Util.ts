@@ -19,3 +19,8 @@ export function isPronounValue(s: string): s is PronounCodes {
 export function isPronounObject(o: any): o is PronounObject {
 	return 'prnnbjct' in o;
 }
+
+export default {
+	isPronounObject,
+	isPronounValue,
+};

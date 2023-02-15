@@ -4,8 +4,8 @@ import { PronounCodes } from './PronounCodes.js';
 import {
 	isPronounObject,
 	isPronounValue,
-	PronounObject,
-	PronounValue,
+	type PronounObject,
+	type PronounValue,
 } from './Util.js';
 
 export default DefaultPronouns;
@@ -15,6 +15,6 @@ export {
 	isPronounValue,
 	Pronoun,
 	PronounCodes,
-	PronounObject,
-	PronounValue,
+	type PronounObject,
+	type PronounValue,
 };
