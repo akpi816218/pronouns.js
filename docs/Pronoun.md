@@ -20,3 +20,5 @@ Properties:
 
 `custom: boolean`:
 Returns whether or not this is custom
+
+[Back to main documentation](..)
