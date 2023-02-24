@@ -17,8 +17,10 @@ export class Pronoun {
 		this.custom = !!value;
 	}
 	static fromJSON(json: PronounObject) {
-		if (!json.value) return new Pronoun(json.code);
-		else return new Pronoun(json.code, json.value);
+		if (!json.custom) return new Pronoun(json.code);
+		else if ((json.code = PronounCodes.other))
+			return new Pronoun(json.code, json.value);
+		else throw new Error('Invalid JSON object for Pronoun class');
 	}
 	toJSON(): PronounObject {
 		return {
