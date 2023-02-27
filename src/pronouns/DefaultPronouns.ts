@@ -6,5 +6,5 @@ export const DefaultPronouns = {
 	heHim: new Pronoun(PronounCodes.heHim),
 	other: new Pronoun(PronounCodes.other),
 	sheHer: new Pronoun(PronounCodes.sheHer),
-	theyThem: new Pronoun(PronounCodes.theyThem),
+	theyThem: new Pronoun(PronounCodes.theyThem)
 };

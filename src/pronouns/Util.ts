@@ -22,5 +22,5 @@ export function isPronounObject(o: any): o is PronounObject {
 
 export default {
 	isPronounObject,
-	isPronounValue,
+	isPronounValue
 };

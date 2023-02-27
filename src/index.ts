@@ -1,20 +1,37 @@
-import { DefaultPronouns } from './DefaultPronouns.js';
-import { Pronoun } from './Pronoun.js';
-import { PronounCodes } from './PronounCodes.js';
 import {
-	isPronounObject,
-	isPronounValue,
-	type PronounObject,
-	type PronounValue,
-} from './Util.js';
-
-export default DefaultPronouns;
-export {
 	DefaultPronouns,
-	isPronounObject,
-	isPronounValue,
 	Pronoun,
 	PronounCodes,
-	type PronounObject,
-	type PronounValue,
+	PronounObject,
+	PronounValue,
+	isPronounObject,
+	isPronounValue
+} from './pronouns/index.js';
+import {
+	Gender,
+	GenderCodes,
+	GenderObject,
+	isGenderObject
+} from './gender/index.js';
+
+export {
+	DefaultPronouns,
+	Gender,
+	GenderCodes,
+	GenderObject,
+	Pronoun,
+	PronounCodes,
+	PronounObject,
+	PronounValue,
+	isGenderObject,
+	isPronounObject,
+	isPronounValue
+};
+
+export default {
+	DefaultPronouns,
+	Pronoun,
+	PronounCodes,
+	isPronounObject,
+	isPronounValue
 };

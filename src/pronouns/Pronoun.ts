@@ -1,5 +1,5 @@
+import { PronounObject, PronounValue } from './Util.js';
 import { PronounCodes } from './PronounCodes.js';
-import { PronounValue, PronounObject } from './Util.js';
 
 export class Pronoun {
 	code: PronounCodes;
@@ -18,7 +18,7 @@ export class Pronoun {
 	}
 	static fromJSON(json: PronounObject) {
 		if (!json.custom) return new Pronoun(json.code);
-		else if ((json.code = PronounCodes.other))
+		else if (json.code == PronounCodes.other)
 			return new Pronoun(json.code, json.value);
 		else throw new Error('Invalid JSON object for Pronoun class');
 	}
@@ -27,7 +27,7 @@ export class Pronoun {
 			code: this.code,
 			custom: this.custom,
 			prnnbjct: 'PronounObject',
-			value: this.value,
+			value: this.value
 		};
 	}
 	toString() {
