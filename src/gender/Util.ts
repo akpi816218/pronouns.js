@@ -18,3 +18,8 @@ export function isGenderObject(o: any): o is GenderObject {
 		Object.entries(o).length === 2
 	);
 }
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function isGenderValue(value: any): value is GenderCodes {
+	return Object.values(GenderCodes).includes(value);
+}
