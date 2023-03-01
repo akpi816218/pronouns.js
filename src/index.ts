@@ -11,8 +11,9 @@ import {
 	Gender,
 	GenderCodes,
 	GenderObject,
-	isGenderObject,
-	isGenderValue
+	areGenderCodes,
+	isGenderCode,
+	isGenderObject
 } from './gender/index.js';
 
 export {
@@ -24,8 +25,9 @@ export {
 	PronounCodes,
 	PronounObject,
 	PronounValue,
+	areGenderCodes,
 	isGenderObject,
-	isGenderValue,
+	isGenderCode,
 	isPronounObject,
 	isPronounValue
 };
