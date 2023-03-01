@@ -1,6 +1,6 @@
 {
 	"name": "pronouns.js",
-	"version": "3.0.0-beta.3",
+	"version": "3.0.0-beta.4",
 	"description": "A simple pronoun system for JS & TS, including support for custom pronouns.",
 	"main": "src/index.ts",
 	"type": "module",

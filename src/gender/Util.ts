@@ -19,10 +19,10 @@ export function isGenderObject(o: any): o is GenderObject {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function isGenderValue(value: any): value is GenderCodes {
+export function isGenderCode(value: any): value is GenderCodes {
 	return Object.values(GenderCodes).includes(value);
 }
 
-export function areGenderValues(values: unknown[]): values is GenderCodes[] {
-	return values.every((value) => isGenderValue(value));
+export function areGenderCodes(values: unknown[]): values is GenderCodes[] {
+	return values.every((value) => isGenderCode(value));
 }
