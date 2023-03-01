@@ -22,3 +22,7 @@ export function isGenderObject(o: any): o is GenderObject {
 export function isGenderValue(value: any): value is GenderCodes {
 	return Object.values(GenderCodes).includes(value);
 }
+
+export function areGenderValues(values: unknown[]): values is GenderCodes[] {
+	return values.every((value) => isGenderValue(value));
+}
