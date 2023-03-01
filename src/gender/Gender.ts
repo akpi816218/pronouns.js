@@ -36,7 +36,7 @@ export class Gender {
 		this.queer = bits.includes(GenderCodes.queer);
 		this.transgender = bits.includes(GenderCodes.transgender);
 	}
-	fromJSON(o: GenderObject): Gender {
+	static fromJSON(o: GenderObject): Gender {
 		if (isGenderObject(o)) return new Gender(...o.bits);
 		else throw new Error('Invalid GenderObject');
 	}
