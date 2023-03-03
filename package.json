@@ -1,7 +1,7 @@
 {
 	"name": "pronouns.js",
-	"version": "2.0.2",
-	"description": "A simple pronoun system for JavaScript, including support for custom pronouns.",
+	"version": "3.0.0",
+	"description": "A simple pronoun and gender system for JS & TS, including support for custom pronouns.",
 	"main": "src/index.ts",
 	"type": "module",
 	"scripts": {
@@ -19,14 +19,12 @@
 		"url": "https://github.com/akpi816218/pronouns.js/issues"
 	},
 	"homepage": "https://github.com/akpi816218/pronouns.js#readme",
-	"dependencies": {
-		"prettier": "^2.8.3",
-		"typescript": "^4.9.4"
-	},
+	"dependencies": {},
 	"devDependencies": {
+		"prettier": "^2.8.3",
 		"@types/node": "^18.13.0",
 		"@types/prettier": "^2.7.2",
-		"prettier": "^2.8.3",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
 		"typescript": "^4.9.4"
 	}
 }

@@ -1,0 +1,6 @@
+node_module
+.devcontainer
+.github
+dist
+docs
+**/*.js*
