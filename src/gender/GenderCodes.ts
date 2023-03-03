@@ -1,4 +1,9 @@
 /* eslint-disable no-unused-vars */
+
+/**
+ * Codes to denote gender identities
+ * @enum {string}
+ */
 export enum GenderCodes {
 	amab = 'amab',
 	afab = 'afab',

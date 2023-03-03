@@ -1,4 +1,9 @@
 /* eslint-disable no-unused-vars */
+
+/**
+ * Codes to denote pronoun types
+ * @enum {string}
+ */
 export enum PronounCodes {
 	// When changing this also change array in isPronounValue
 	any = 'Any',

@@ -1,18 +1,21 @@
 import {
-	GenderObject,
+	type GenderBitField,
+	type GenderObject,
 	areGenderCodes,
 	isGenderCode,
-	isGenderObject
+	isGenderObject,
+	isValidGenderBitField
 } from './Util.js';
 import { Gender } from './Gender.js';
 import { GenderCodes } from './GenderCodes.js';
 
 export {
 	Gender,
+	type GenderBitField,
 	GenderCodes,
-	GenderObject,
+	type GenderObject,
 	areGenderCodes,
 	isGenderObject,
-	isGenderCode
+	isGenderCode,
+	isValidGenderBitField
 };
-export default Gender;

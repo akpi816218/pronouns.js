@@ -1,33 +1,41 @@
+/** @module pronouns.js */
+
 import {
 	DefaultPronouns,
 	Pronoun,
 	PronounCodes,
-	PronounObject,
-	PronounValue,
+	type PronounObject,
+	type PronounValue,
+	isPronounCode,
 	isPronounObject,
 	isPronounValue
 } from './pronouns/index.js';
 import {
 	Gender,
+	type GenderBitField,
 	GenderCodes,
-	GenderObject,
+	type GenderObject,
 	areGenderCodes,
 	isGenderCode,
-	isGenderObject
+	isGenderObject,
+	isValidGenderBitField
 } from './gender/index.js';
 
 export {
 	DefaultPronouns,
 	Gender,
+	type GenderBitField,
 	GenderCodes,
-	GenderObject,
+	type GenderObject,
 	Pronoun,
 	PronounCodes,
-	PronounObject,
-	PronounValue,
+	type PronounObject,
+	type PronounValue,
 	areGenderCodes,
 	isGenderObject,
 	isGenderCode,
+	isPronounCode,
 	isPronounObject,
-	isPronounValue
+	isPronounValue,
+	isValidGenderBitField
 };
