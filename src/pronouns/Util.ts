@@ -4,14 +4,22 @@ import { PronounCodes } from './PronounCodes.js';
  * A type for a value that can be a PronounCode or a custom pronoun
  * @typedef {PronounCodes | string} PronounValue
  */
-export type PronounValue = PronounCodes | `CustomPronoun:${string}/${string}`;
+
+export type PronounCode =
+	| PronounCodes
+	| 'Any'
+	| 'He/Him'
+	| 'Other'
+	| 'She/Her'
+	| 'They/Them';
+export type PronounValue = PronounCode | `CustomPronoun:${string}/${string}`;
 
 /**
  * Interface for an Object describing a Pronoun
  * @interface PronounObject
  */
 export interface PronounObject {
-	code: PronounCodes;
+	code: PronounCode;
 	custom: boolean;
 	value?: PronounValue;
 }
@@ -19,10 +27,10 @@ export interface PronounObject {
 /**
  * Determine if a string is a PronounCode
  * @param {string} string - The string to check
- * @returns {string is PronounCodes}
+ * @returns {string is PronounCode}
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function isPronounCode(string: any): string is PronounCodes {
+export function isPronounCode(string: any): string is PronounCode {
 	return Object.values(PronounCodes).includes(string);
 }
 

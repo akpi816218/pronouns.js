@@ -1,4 +1,4 @@
-import { PronounObject, PronounValue } from './Util.js';
+import { PronounCode, PronounObject, PronounValue } from './Util.js';
 import { PronounCodes } from './PronounCodes.js';
 
 /**
@@ -6,16 +6,16 @@ import { PronounCodes } from './PronounCodes.js';
  * @class Pronoun
  */
 export class Pronoun {
-	code: PronounCodes;
+	code: PronounCode;
 	custom: boolean;
 	value: PronounValue;
 
 	/**
-	 *
-	 * @param {PronounCodes} code - A code describing the pronoun
+	 * Create a new Pronoun
+	 * @param {PronounCode} code - A code describing the pronoun
 	 * @param {PronounValue} value - A custom PronounValue
 	 */
-	constructor(code: PronounCodes, value?: PronounValue) {
+	constructor(code: PronounCode, value?: PronounValue) {
 		this.code = code;
 		if (value && this.code != PronounCodes.other)
 			throw new Error(
@@ -32,7 +32,7 @@ export class Pronoun {
 	 * @param {PronounObject} pronounobject - The PronounObject to use
 	 * @returns {Pronoun}
 	 */
-	static fromJSON(pronounobject: PronounObject) {
+	static fromJSON(pronounobject: PronounObject): Pronoun {
 		if (!pronounobject.custom) return new Pronoun(pronounobject.code);
 		else if (pronounobject.code == PronounCodes.other)
 			return new Pronoun(pronounobject.code, pronounobject.value);
@@ -44,11 +44,16 @@ export class Pronoun {
 	 * @returns {PronounObject}
 	 */
 	toJSON(): PronounObject {
-		return {
-			code: this.code,
-			custom: this.custom,
-			value: this.value
-		};
+		return this.custom
+			? {
+					code: this.code,
+					custom: this.custom,
+					value: this.value
+			  }
+			: {
+					code: this.code,
+					custom: this.custom
+			  };
 	}
 
 	/**

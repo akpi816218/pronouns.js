@@ -5,7 +5,7 @@
  * @enum {string}
  */
 export enum PronounCodes {
-	// When changing this also change array in isPronounValue
+	// When changing this also change list in `type PronounCode` in `src/pronouns/Util.ts
 	any = 'Any',
 	heHim = 'He/Him',
 	other = 'Other',
