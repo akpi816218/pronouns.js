@@ -62,17 +62,10 @@ export function areGenderCodes(values: unknown[]): values is GenderCodes[] {
  * @param {unknown[]} values - The values to check
  * @returns {values is GenderBitField}
  */
-export function isValidGenderBitField(values: unknown[]): values is GenderBitField {
+export function isValidGenderBitField(
+	values: unknown[]
+): values is GenderBitField {
 	return (
-		values instanceof Array &&
-		values.every((value) => isGenderCode(value)) &&
-		!(
-			(
-				!values.includes(GenderCodes.afab) && !values.includes(GenderCodes.amab)
-			) || (
-				values.includes(GenderCodes.afab) && values.includes(GenderCodes.amab)
-			)
-		) &&
-		values.length > 2
+		values instanceof Array && values.every((value) => isGenderCode(value))
 	);
 }

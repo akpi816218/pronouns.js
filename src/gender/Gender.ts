@@ -1,14 +1,20 @@
-import { GenderBitField, GenderObject, isGenderObject, isValidGenderBitField } from './Util.js';
+import {
+	GenderBitField,
+	GenderObject,
+	isGenderObject,
+	isValidGenderBitField
+} from './Util.js';
 import { GenderCodes } from './GenderCodes.js';
 
 /**
  * A class representing one's gender(s)
  * @class Gender
-*/
+ */
 export class Gender {
 	bits: GenderCodes[];
-	atBirth: GenderCodes.afab | GenderCodes.amab;
 	agender: boolean;
+	amab: boolean;
+	afab: boolean;
 	cisgender: boolean;
 	demigender: boolean;
 	female: boolean;
@@ -23,23 +29,27 @@ export class Gender {
 	 * Create a Gender
 	 * @constructor
 	 * @param {...GenderBitField} bits - The GenderBitField to use
-	*/
+	 */
 	constructor(...bits: GenderBitField) {
 		if (!isValidGenderBitField(bits)) throw new Error('Invalid GenderBitField');
 
 		/**
 		 * The GenderBitField of this Gender
 		 * @type {GenderBitField}
-		*/
+		 */
 		this.bits = bits;
 
 		/**
-		 * Assigned gender at birth
-		 * @type {GenderCodes.afab | GenderCodes.amab}
+		 * Whether the person was AMAB
+		 * @type {boolean}
 		 */
-		this.atBirth = bits.includes(GenderCodes.amab)
-			? GenderCodes.amab
-			: GenderCodes.afab;
+		this.amab = bits.includes(GenderCodes.amab);
+
+		/**
+		 * Whether the person was AFAB
+		 * @type {boolean}
+		 */
+		this.afab = bits.includes(GenderCodes.afab);
 
 		/**
 		 * Whether the person identifies as agender
@@ -102,17 +112,15 @@ export class Gender {
 		this.transgender = bits.includes(GenderCodes.transgender);
 	}
 
-
 	/**
 	 * Create a new Gender from a GenderObject
 	 * @param {GenderObject} object - The GenderObject to use
 	 * @returns {Gender}
-	*/
+	 */
 	static fromJSON(object: GenderObject): Gender {
 		if (isGenderObject(object)) return new Gender(...object.bits);
 		else throw new Error('Invalid GenderObject');
 	}
-
 
 	/**
 	 * Serialize this Gender to a GenderObject
