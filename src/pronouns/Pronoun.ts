@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import { PronounCode, PronounObject, PronounValue } from './Util.js';
 import { PronounCodes } from './PronounCodes.js';
 
@@ -6,14 +7,24 @@ import { PronounCodes } from './PronounCodes.js';
  * @class Pronoun
  */
 export class Pronoun {
+	/**
+	 * @property {PronounCode} code - The code for this Pronoun
+	 */
 	code: PronounCode;
+	/**
+	 * @property {boolean} custom - Whether or not this Pronoun is custom
+	 */
 	custom: boolean;
+	/**
+	 * @property {PronounValue} value - The value for this Pronoun
+	 */
 	value: PronounValue;
 
 	/**
 	 * Create a new Pronoun
+	 * @constructor
 	 * @param {PronounCode} code - A code describing the pronoun
-	 * @param {PronounValue} value - A custom PronounValue
+	 * @param {PronounValue} [value] - A custom PronounValue
 	 */
 	constructor(code: PronounCode, value?: PronounValue) {
 		this.code = code;
@@ -29,6 +40,7 @@ export class Pronoun {
 
 	/**
 	 * Create a new Pronoun from a PronounObject
+	 * @static
 	 * @param {PronounObject} pronounobject - The PronounObject to use
 	 * @returns {Pronoun}
 	 */

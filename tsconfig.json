@@ -1,10 +1,11 @@
 {
 	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "dist/types",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 		"module": "ESNext",
 		"moduleResolution": "nodenext",
-		"noEmit": true,
 		"outDir": "dist",
 		"skipLibCheck": true,
 		"strict": true,

@@ -1,10 +1,9 @@
 import { PronounCodes } from './PronounCodes.js';
 
 /**
- * A type for a value that can be a PronounCode or a custom pronoun
- * @typedef {PronounCodes | string} PronounValue
+ * A type for a code that can be a PronounCode or a custom pronoun
+ * @typedef {PronounCodes | string} PronounCode
  */
-
 export type PronounCode =
 	| PronounCodes
 	| 'Any'
@@ -12,6 +11,11 @@ export type PronounCode =
 	| 'Other'
 	| 'She/Her'
 	| 'They/Them';
+
+/**
+ * A type for a value that can be a PronounCode or a custom pronoun
+ * @typedef {PronounCode | string} PronounValue
+ */
 export type PronounValue = PronounCode | `CustomPronoun:${string}/${string}`;
 
 /**
@@ -27,7 +31,7 @@ export interface PronounObject {
 /**
  * Determine if a string is a PronounCode
  * @param {string} string - The string to check
- * @returns {string is PronounCode}
+ * @returns {boolean}
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isPronounCode(string: any): string is PronounCode {
@@ -37,7 +41,7 @@ export function isPronounCode(string: any): string is PronounCode {
 /**
  * Determine if a string is a PronounValue
  * @param {string} string - The string to check
- * @returns {string is PronounValue}
+ * @returns {boolean}
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isPronounValue(string: any): string is PronounValue {
@@ -50,7 +54,7 @@ export function isPronounValue(string: any): string is PronounValue {
 /**
  * Determine if an object is a PronounObject
  * @param {any} object - The object to check
- * @returns {object is PronounObject}
+ * @returns {boolean}
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isPronounObject(object: any): object is PronounObject {

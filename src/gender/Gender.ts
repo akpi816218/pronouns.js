@@ -1,9 +1,3 @@
-import {
-	GenderBitField,
-	GenderObject,
-	isGenderObject,
-	isValidGenderBitField
-} from './Util.js';
 import { GenderCodes } from './GenderCodes.js';
 
 /**
@@ -28,11 +22,9 @@ export class Gender {
 	/**
 	 * Create a Gender
 	 * @constructor
-	 * @param {...GenderBitField} bits - The GenderBitField to use
+	 * @param {...GenderCodes[]} bits - The GenderBitField to use
 	 */
-	constructor(...bits: GenderBitField) {
-		if (!isValidGenderBitField(bits)) throw new Error('Invalid GenderBitField');
-
+	constructor(...bits: GenderCodes[]) {
 		/**
 		 * The GenderBitField of this Gender
 		 * @type {GenderBitField}
@@ -40,7 +32,7 @@ export class Gender {
 		this.bits = bits;
 
 		/**
-		 * Whether the person was AMAB
+		 * Whether the person is AMAB
 		 * @type {boolean}
 		 */
 		this.amab = bits.includes(GenderCodes.amab);
@@ -114,19 +106,18 @@ export class Gender {
 
 	/**
 	 * Create a new Gender from a GenderObject
-	 * @param {GenderObject} object - The GenderObject to use
+	 * @param {{ bits: GenderCodes[] }} object - The GenderObject to use
 	 * @returns {Gender}
 	 */
-	static fromJSON(object: GenderObject): Gender {
-		if (isGenderObject(object)) return new Gender(...object.bits);
-		else throw new Error('Invalid GenderObject');
+	static fromJSON(object: { bits: GenderCodes[] }): Gender {
+		return new Gender(...object.bits);
 	}
 
 	/**
 	 * Serialize this Gender to a GenderObject
-	 * @returns {GenderObject}
+	 * @returns {{ bits: GenderCodes[] }}
 	 */
-	toJSON(): GenderObject {
+	toJSON(): { bits: GenderCodes[] } {
 		return {
 			bits: this.bits
 		};
