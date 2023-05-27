@@ -5,7 +5,6 @@
 	},
 	"description": "A simple pronoun and gender system for JS & TS, including support for custom pronouns.",
 	"devDependencies": {
-		"@types/node": "^18.13.0",
 		"@types/prettier": "^2.7.2",
 		"@typescript-eslint/eslint-plugin": "^5.53.0",
 		"docma": "^3.2.2",
