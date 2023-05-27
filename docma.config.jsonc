@@ -1,16 +1,16 @@
 {
-	// "app": {
-	// 	"meta": [
-	// 		{
-	// 			"charset": "utf-8"
-	// 		},
-	// 		{
-	// 			"content": "width=device-width,initial-scale=1.0",
-	// 			"name": "viewport"
-	// 		}
-	// 	],
-	// 	"title": "pronouns.js"
-	// },
+	"app": {
+		"meta": [
+			{
+				"charset": "utf-8"
+			},
+			{
+				"content": "width=device-width,initial-scale=1.0",
+				"name": "viewport"
+			}
+		],
+		"title": "pronouns.js"
+	},
 	"dest": "docs",
 	"src": [
 		"dist/pronouns/Pronoun.js",
@@ -18,27 +18,27 @@
 		"dist/pronouns/DefaultPronouns.js",
 		"dist/gender/Gender.js",
 		"dist/gender/GenderCodes.js"
-	]
-	// "template": {
-	// 	"options": {
-	// 		"navbar": {
-	// 			"menu": [
-	// 				{
-	// 					"href": "/",
-	// 					"label": "Home"
-	// 				},
-	// 				{
-	// 					"href": "https://github.com/akpi816218/pronouns.js",
-	// 					"label": "GitHub",
-	// 					"target": "_blank"
-	// 				}
-	// 			]
-	// 		},
-	// 		"sidebar": {
-	// 			"enabled": true,
-	// 			"outline": "tree"
-	// 		},
-	// 		"title": "pronouns.js"
-	// 	}
-	// }
+	],
+	"template": {
+		"options": {
+			"navbar": {
+				"menu": [
+					{
+						"href": "/",
+						"label": "Home"
+					},
+					{
+						"href": "https://github.com/akpi816218/pronouns.js",
+						"label": "GitHub",
+						"target": "_blank"
+					}
+				]
+			},
+			"sidebar": {
+				"enabled": true,
+				"outline": "tree"
+			},
+			"title": "pronouns.js"
+		}
+	}
 }
