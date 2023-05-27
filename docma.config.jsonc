@@ -11,8 +11,8 @@
 				"name": "viewport"
 			}
 		],
-		"server": "github",
-		"title": "Jsoning"
+		// "server": "github",
+		"title": "pronouns.js"
 	},
 	"dest": "docs",
 	"src": [
