@@ -3,12 +3,12 @@
 	"bugs": {
 		"url": "https://github.com/akpi816218/pronouns.js/issues"
 	},
-	"dependencies": {},
 	"description": "A simple pronoun and gender system for JS & TS, including support for custom pronouns.",
 	"devDependencies": {
 		"@types/node": "^18.13.0",
 		"@types/prettier": "^2.7.2",
 		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"docma": "^3.2.2",
 		"prettier": "^2.8.3",
 		"typescript": "^4.9.4"
 	},
@@ -21,7 +21,8 @@
 		"url": "git+ssh://git@github.com/akpi816218/pronouns.js.git"
 	},
 	"scripts": {
-		"build": "npx prettier -w . ; npx tsc ; npx docma -c docma.config.json",
+		"build": "npx prettier -w . ; npx tsc ; npx docma -c docma.config.jsonc",
+		"docs:serve": "npx docma serve docs",
 		"compile": "rm -drf dist ; tsc ; prettier -w . ;",
 		"format": "prettier -w . ;",
 		"test": "echo \"Error: no test specified\" && exit 1"
