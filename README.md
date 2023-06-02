@@ -7,7 +7,7 @@
 	<br><br>
 </div>
 
-A simple and lightweight JavaScript library for managing and creating pronouns. ***Supports custom pronouns!***
+A simple and lightweight JavaScript library for managing and creating pronouns. **_Supports custom pronouns!_**
 I got carried away one day and now this library also has genders.
 
 Contibutions welcome.

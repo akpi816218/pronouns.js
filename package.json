@@ -13,21 +13,19 @@
 		"url": "git+ssh://git@github.com/akpi816218/pronouns.js.git"
 	},
 	"scripts": {
-		"build": "npx prettier -w . ; npx tsc ; npx docma -c docma.config.jsonc",
+		"build": "npx prettier -w . ; \\rm -drf dist ; npx tsc ; \\rm -drf docs ; npx docma -c docma.config.jsonc",
+		"docs:build": "\\rm -drf docs ; npx docma -c docma.config.jsonc",
 		"docs:serve": "npx docma serve docs",
-		"compile": "rm -drf dist ; tsc ; prettier -w . ;",
-		"format": "prettier -w . ;",
+		"compile": "npx prettier -w . ; \\rm -drf dist ; npx tsc",
+		"format": "npx prettier -w . ;",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"type": "module",
 	"types": "dist/types/index.d.ts",
 	"version": "3.2.0",
-	"dependencies": {
-		"prettier": "^2.8.8",
-		"typescript": "^5.0.4"
-	},
 	"devDependencies": {
-		"jsdoc-to-markdown": "^8.0.0",
-		"typedoc": "^0.24.7"
+		"docma": "^3.2.2",
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.3"
 	}
 }

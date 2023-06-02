@@ -1,0 +1,36 @@
+{
+	"app": {
+		"title": "pronouns.js",
+		"favicon": "files/pronouns.js_logo.svg"
+	},
+	"template": {
+		"navbar": {
+			"enabled": true,
+			"fixed": true,
+			"dark": true,
+			"animations": true,
+			"menu": [
+				{
+					"label": "GitHub",
+					"href": "https://github.com/akpi816218/pronouns.js"
+				},
+				{
+					"label": "NPM",
+					"href": "https://www.npmjs.com/package/pronouns.js"
+				}
+			]
+		}
+	},
+	"assets": [
+		"../files/*.*"
+	],
+	"src": [
+		"dist/pronouns/Pronoun.js",
+		"dist/pronouns/PronounCodes.js",
+		"dist/pronouns/DefaultPronouns.js",
+		"dist/pronouns/Util.js",
+		"dist/gender/Gender.js",
+		"dist/gender/GenderCodes.js"
+	],
+	"dest": "docs"
+}

@@ -16,7 +16,7 @@ export type PronounCode =
  * A type for a value that can be a PronounCode or a custom pronoun
  * @typedef {PronounCode | string} PronounValue
  */
-export type PronounValue = PronounCode | `CustomPronoun:${string}/${string}`;
+export type PronounValue = PronounCode | string;
 
 /**
  * Interface for an Object describing a Pronoun
@@ -30,6 +30,7 @@ export interface PronounObject {
 
 /**
  * Determine if a string is a PronounCode
+ * @function isPronounCode
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -40,6 +41,7 @@ export function isPronounCode(string: any): string is PronounCode {
 
 /**
  * Determine if a string is a PronounValue
+ * @function isPronounValue
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -53,6 +55,7 @@ export function isPronounValue(string: any): string is PronounValue {
 
 /**
  * Determine if an object is a PronounObject
+ * @function isPronounObject
  * @param {any} object - The object to check
  * @returns {boolean}
  */

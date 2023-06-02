@@ -1,6 +1,7 @@
 import { PronounCodes } from './PronounCodes.js';
 /**
  * Determine if a string is a PronounCode
+ * @function isPronounCode
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -10,6 +11,7 @@ export function isPronounCode(string) {
 }
 /**
  * Determine if a string is a PronounValue
+ * @function isPronounValue
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -20,6 +22,7 @@ export function isPronounValue(string) {
 }
 /**
  * Determine if an object is a PronounObject
+ * @function isPronounObject
  * @param {any} object - The object to check
  * @returns {boolean}
  */
