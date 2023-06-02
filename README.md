@@ -12,7 +12,7 @@ I got carried away one day and now this library also has genders.
 
 Contibutions welcome.
 
-The documentation is available [`docs/index.md`](here).
+The documentation is available [https://8f0bc99f-d5a9-410d-9429-8b031e9a7b0c.id.repl.co](here).
 
 ## Installation
 
