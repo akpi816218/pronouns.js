@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 /**
  * Codes to denote gender identities
  * @enum {string}
@@ -7,7 +5,7 @@
  * @example
  * new Gender(GenderCodes.afab, GenderCodes.cisgender)
  */
-export enum GenderCodes {
+export declare enum GenderCodes {
 	/**
 	 * Assigned Female At Birth
 	 * @type {string}

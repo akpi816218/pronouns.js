@@ -19,12 +19,12 @@ export declare class Gender {
     transgender: boolean;
     /**
      * Create a Gender
-     * @constructor
-     * @param {...GenderCodes[]} bits - The GenderBitField to use
+     * @param {...GenderCodes[]} bits - The GenderCodes to use
      */
     constructor(...bits: GenderCodes[]);
     /**
      * Create a new Gender from a GenderObject
+     * @static
      * @param {{ bits: GenderCodes[] }} object - The GenderObject to use
      * @returns {Gender}
      */

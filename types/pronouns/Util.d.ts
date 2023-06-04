@@ -21,6 +21,9 @@ export interface PronounObject {
 /**
  * Determine if a string is a PronounCode
  * @function isPronounCode
+ * @example
+ * isPronounCode('He/Him') // true
+ * isPronounCode('asdf') // false
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -28,6 +31,10 @@ export declare function isPronounCode(string: any): string is PronounCode;
 /**
  * Determine if a string is a PronounValue
  * @function isPronounValue
+ * @example
+ * isPronounValue('He/Him') // true
+ * isPronounValue('CustomPronoun:Ze/Zir') // true
+ * isPronounValue('asdf') // false
  * @param {string} string - The string to check
  * @returns {boolean}
  */
@@ -35,6 +42,10 @@ export declare function isPronounValue(string: any): string is PronounValue;
 /**
  * Determine if an object is a PronounObject
  * @function isPronounObject
+ * @example
+ * isPronounObject({ code: 'He/Him', custom: false }) // true
+ * isPronounObject({ code: 'Other', custom: true, value: 'CustomPronoun:Ze/Zir' }) // true
+ * isPronounObject({ code: 'asdf', custom: false }) // false
  * @param {any} object - The object to check
  * @returns {boolean}
  */

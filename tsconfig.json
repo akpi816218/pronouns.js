@@ -11,5 +11,7 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ESNext"
-	}
+	},
+	"exclude": ["node_modules", "dist", "types", "docs", "files"],
+	"include": ["src"]
 }

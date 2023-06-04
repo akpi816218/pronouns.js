@@ -4,17 +4,8 @@ import { PronounCodes } from './PronounCodes.js';
  * @class Pronoun
  */
 export class Pronoun {
-    /**
-     * @property {PronounCode} code - The code for this Pronoun
-     */
     code;
-    /**
-     * @property {boolean} custom - Whether or not this Pronoun is custom
-     */
     custom;
-    /**
-     * @property {PronounValue} value - The value for this Pronoun
-     */
     value;
     /**
      * Create a new Pronoun
@@ -23,12 +14,27 @@ export class Pronoun {
      * @param {PronounValue} [value] - A custom PronounValue
      */
     constructor(code, value) {
+        /**
+         * The code of this Pronoun
+         * @readonly
+         * @property {PronounCode} code
+         */
         this.code = code;
         if (value && this.code != PronounCodes.other)
             throw new Error("Cannot accept 'value' parameter because 'code' parameter is not equal to 'PronounCodes.other'");
         else {
+            /**
+             * The value of this Pronoun
+             * @readonly
+             * @property {PronounValue} value
+             */
             this.value = value || this.code;
         }
+        /**
+         * Whether this Pronoun is custom
+         * @readonly
+         * @property {boolean} custom
+         */
         this.custom = !!value;
     }
     /**
@@ -53,12 +59,12 @@ export class Pronoun {
         return this.custom
             ? {
                 code: this.code,
-                custom: this.custom,
+                custom: true,
                 value: this.value
             }
             : {
                 code: this.code,
-                custom: this.custom
+                custom: false
             };
     }
     /**

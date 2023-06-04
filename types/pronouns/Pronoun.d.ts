@@ -4,17 +4,8 @@ import { PronounCode, PronounObject, PronounValue } from './Util.js';
  * @class Pronoun
  */
 export declare class Pronoun {
-    /**
-     * @property {PronounCode} code - The code for this Pronoun
-     */
     code: PronounCode;
-    /**
-     * @property {boolean} custom - Whether or not this Pronoun is custom
-     */
     custom: boolean;
-    /**
-     * @property {PronounValue} value - The value for this Pronoun
-     */
     value: PronounValue;
     /**
      * Create a new Pronoun

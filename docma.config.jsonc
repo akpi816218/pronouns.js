@@ -15,9 +15,7 @@
 		"server": "static",
 		"title": "pronouns.js"
 	},
-	"assets": [
-		"./files/*.*"
-	],
+	"assets": ["./files/*.*"],
 	"dest": "docs",
 	"markdown": {
 		"gfm": true,
