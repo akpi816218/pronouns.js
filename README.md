@@ -26,7 +26,7 @@ The documentation is available [here](/?api).
 
 ## Installation
 
-Install from NPM. Type definitions are included sfor you TypeScript people (including me), so there's no need to try and install `@types/pronouns.js` as a devDependency — it probably doesn't exist anyways.
+Install from NPM. Type definitions are included for you TypeScript people (including me), so there's no need to try and install `@types/pronouns.js` as a devDependency — it probably doesn't exist anyways.
 
 ```bash
 $ npm i pronouns.js

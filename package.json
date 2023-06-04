@@ -13,17 +13,18 @@
 		"url": "git+ssh://git@github.com/akpi816218/pronouns.js.git"
 	},
 	"scripts": {
-		"build": "npm run format && npm run compile && npm run docs:build",
+		"build": "npm run compile && npm run docs:build",
 		"docs:build": "\\rm -drf docs ; npx docma -c docma.config.jsonc",
 		"docs:serve": "npx docma serve docs",
-		"compile": "npm run format ; \\rm -drf dist ; npx tsc",
+		"compile": "npm run format && \\rm -drf dist && npx tsc",
 		"format": "npx prettier -w .",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"type": "module",
-	"types": "dist/types/index.d.ts",
-	"version": "3.2.2",
+	"types": "types/index.d.ts",
+	"version": "3.2.3",
 	"devDependencies": {
+		"@types/node": "^20.2.5",
 		"docma": "^3.2.2",
 		"prettier": "^2.8.8",
 		"typescript": "^5.1.3"

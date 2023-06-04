@@ -43,6 +43,7 @@
 				"menu": [
 					{
 						"href": "/",
+						"iconClass": "fas fa-home",
 						"label": "Home"
 					},
 					{
@@ -57,7 +58,8 @@
 					},
 					{
 						"href": "https://www.npmjs.com/package/pronouns.js",
-						"label": "NPM"
+						"iconClass": "fab fa-lg fa-npm",
+						"label": ""
 					}
 				]
 			},
