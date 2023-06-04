@@ -34,7 +34,7 @@
 		"genderqueer"
 	],
 	"license": "MIT",
-	"main": "dist/index.ks",
+	"main": "dist/index.js",
 	"name": "pronouns.js",
 	"repository": {
 		"type": "git",
@@ -52,7 +52,7 @@
 	},
 	"type": "module",
 	"types": "types/index.d.ts",
-	"version": "3.2.3",
+	"version": "3.2.4",
 	"dependencies": {
 		"@types/eslint": "^8.40.0",
 		"@typescript-eslint/eslint-plugin": "^5.59.8",
