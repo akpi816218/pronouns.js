@@ -1,10 +1,20 @@
-# pronouns.js
-
 <div align="center">
-	<img src="files/pronouns.js_animated_banner.gif" style="max-width:1200px; width:100vw;">
-	<br><br>
-	<img src="https://img.shields.io/npm/v/pronouns.js" alt="package-version-npm"> <img src="https://img.shields.io/npm/dt/pronouns.js" alt="npm-downloads"> <img src="https://img.shields.io/librariesio/release/npm/pronouns.js" alt="npm-dependency-versions"> <img src="https://img.shields.io/github/last-commit/akpi816218/pronouns.js" alt="github-last-commit">  <img src="https://img.shields.io/github/stars/akpi816218/pronouns.js?style=social" alt="github-repo-stars"> <img src="https://img.shields.io/npm/l/pronouns.js" alt="license-npm">
-	<br><br>
+
+<h1 style="margin-bottom:0;">pronouns.js</h1>
+
+<img src="https://raw.githubusercontent.com/akpi816218/pronouns.js/gitmaster/files/pronouns.js_animated_banner.gif" style="width:1200px;max-width:50vw;margin:1.5em;margin-top:0;">
+
+<br>
+
+![package-version-npm](https://img.shields.io/npm/v/pronouns.js)
+![npm-downloads](https://img.shields.io/npm/dt/pronouns.js)
+![npm-dependency-versions](https://img.shields.io/librariesio/release/npm/pronouns.js)
+![github-latest-commit](https://img.shields.io/github/last-commit/akpi816218/pronouns.js)
+![github-stars](https://img.shields.io/github/stars/akpi816218/pronouns.js?style=social)
+![license-npm](https://img.shields.io/npm/l/pronouns.js)
+
+A simple system to keep track of pronouns — and genders — with JavaScript and TypeScript.
+
 </div>
 
 A simple and lightweight JavaScript library for managing and creating pronouns. **_Supports custom pronouns!_**
@@ -12,14 +22,14 @@ I got carried away one day and now this library also has genders.
 
 Contibutions welcome.
 
-The documentation is available [https://8f0bc99f-d5a9-410d-9429-8b031e9a7b0c.id.repl.co](here).
+The documentation is available [here](/?api).
 
 ## Installation
 
-Install from NPM. Type definitions included for you TypeScript people (including me), so there's no need to try and install `@types/pronouns.js` as a devDependency — it probably doesn't exist anyways.
+Install from NPM. Type definitions are included sfor you TypeScript people (including me), so there's no need to try and install `@types/pronouns.js` as a devDependency — it probably doesn't exist anyways.
 
-```shell
-npm i pronouns.js
+```bash
+$ npm i pronouns.js
 ```
 
 ## Support

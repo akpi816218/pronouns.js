@@ -13,11 +13,11 @@
 		"url": "git+ssh://git@github.com/akpi816218/pronouns.js.git"
 	},
 	"scripts": {
-		"build": "npx prettier -w . ; \\rm -drf dist ; npx tsc ; \\rm -drf docs ; npx docma -c docma.config.jsonc",
+		"build": "npm run format && npm run compile && npm run docs:build",
 		"docs:build": "\\rm -drf docs ; npx docma -c docma.config.jsonc",
 		"docs:serve": "npx docma serve docs",
-		"compile": "npx prettier -w . ; \\rm -drf dist ; npx tsc",
-		"format": "npx prettier -w . ;",
+		"compile": "npm run format ; \\rm -drf dist ; npx tsc",
+		"format": "npx prettier -w .",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"type": "module",
