@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 /**
  * Codes to denote pronoun types
  * @enum {string}
@@ -7,8 +5,7 @@
  * @example
  * new Pronoun(PronounCodes.theyThem)
  */
-export enum PronounCodes {
-	// When changing this also change list in `type PronounCode` in `src/pronouns/Util.ts
+export declare enum PronounCodes {
 	/**
 	 * Any pronouns
 	 * @type {string}

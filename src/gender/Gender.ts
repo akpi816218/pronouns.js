@@ -21,91 +21,91 @@ export class Gender {
 
 	/**
 	 * Create a Gender
-	 * @constructor
-	 * @param {...GenderCodes[]} bits - The GenderBitField to use
+	 * @param {...GenderCodes[]} bits - The GenderCodes to use
 	 */
 	constructor(...bits: GenderCodes[]) {
 		/**
-		 * The GenderBitField of this Gender
-		 * @type {GenderBitField}
+		 * The GenderCodes of this Gender
+		 * @property {GenderBitField} bits
 		 */
 		this.bits = bits;
 
 		/**
 		 * Whether the person is AMAB
-		 * @type {boolean}
+		 * @property {boolean} amab
 		 */
 		this.amab = bits.includes(GenderCodes.amab);
 
 		/**
-		 * Whether the person was AFAB
-		 * @type {boolean}
+		 * Whether the person is AFAB
+		 * @property {boolean} afab
 		 */
 		this.afab = bits.includes(GenderCodes.afab);
 
 		/**
-		 * Whether the person identifies as agender
-		 * @type {boolean}
+		 * Whether the person is agender
+		 * @property {boolean} agender
 		 */
 		this.agender = bits.includes(GenderCodes.agender);
 
 		/**
-		 * Whether the person identifies as cisgender
-		 * @type {boolean}
+		 * Whether the person is cisgender
+		 * @property {boolean} cisgender
 		 */
 		this.cisgender = bits.includes(GenderCodes.cisgender);
 
 		/**
-		 * Whether the person identifies as demigender
-		 * @type {boolean}
+		 * Whether the person is demigender
+		 * @property {boolean} demigender
 		 */
 		this.demigender = bits.includes(GenderCodes.demigender);
 
 		/**
-		 * Whether the person identifies as female
-		 * @type {boolean}
+		 * Whether the person is female
+		 * @property {boolean} female
 		 */
 		this.female = bits.includes(GenderCodes.female);
 
 		/**
-		 * Whether the person identifies as genderfluid
-		 * @type {boolean}
+		 * Whether the person is genderfluid
+		 * @property {boolean} genderfluid
 		 */
 		this.genderfluid = bits.includes(GenderCodes.genderfluid);
 
 		/**
-		 * Whether the person identifies as male
-		 * @type {boolean}
+		 * Whether the person is male
+		 * @property {boolean} male
 		 */
 		this.male = bits.includes(GenderCodes.male);
 
 		/**
-		 * Whether the person identifies as nonbinary
-		 * @type {boolean}
+		 * Whether the person is nonbinary
+		 * @property {boolean} nonbinary
 		 */
 		this.nonbinary = bits.includes(GenderCodes.nonbinary);
 
 		/**
-		 * Whether the person identifies as polygender
-		 * @type {boolean}
+		 * Whether the person is polygender
+		 * @property {boolean} polygender
 		 */
 		this.polygender = bits.includes(GenderCodes.polygender);
 
 		/**
-		 * Whether the person identifies as genderqueer
-		 * @type {boolean}
+		 * Whether the person is genderqueer
+		 * @property {boolean} queer
 		 */
 		this.queer = bits.includes(GenderCodes.queer);
 
 		/**
-		 * Whether the person identifies as transgender
-		 * @type {boolean}
+		 * Whether the person is transgender
+		 * @property {boolean} transgender
 		 */
 		this.transgender = bits.includes(GenderCodes.transgender);
 	}
 
 	/**
 	 * Create a new Gender from a GenderObject
+	 * @static
 	 * @param {{ bits: GenderCodes[] }} object - The GenderObject to use
 	 * @returns {Gender}
 	 */

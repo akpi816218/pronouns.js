@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /**
  * Codes to denote pronoun types
  * @enum {string}
@@ -6,32 +5,30 @@
  * @example
  * new Pronoun(PronounCodes.theyThem)
  */
-export var PronounCodes;
-(function (PronounCodes) {
-    // When changing this also change list in `type PronounCode` in `src/pronouns/Util.ts
+export declare enum PronounCodes {
     /**
      * Any pronouns
      * @type {string}
      */
-    PronounCodes["any"] = "Any";
+    any = "Any",
     /**
      * He/Him
      * @type {string}
      */
-    PronounCodes["heHim"] = "He/Him";
+    heHim = "He/Him",
     /**
      * Other (custom pronouns / not specified / not found here)
      * @type {string}
      */
-    PronounCodes["other"] = "Other";
+    other = "Other",
     /**
      * She/Her
      * @type {string}
      */
-    PronounCodes["sheHer"] = "She/Her";
+    sheHer = "She/Her",
     /**
      * They/Them
      * @type {string}
      */
-    PronounCodes["theyThem"] = "They/Them";
-})(PronounCodes || (PronounCodes = {}));
+    theyThem = "They/Them"
+}
