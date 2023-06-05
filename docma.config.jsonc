@@ -10,6 +10,26 @@
 			{
 				"content": "width=device-width,initial-scale=1.0",
 				"name": "viewport"
+			},
+			{
+				"property": "og:title",
+				"content": "pronouns.js"
+			},
+			{
+				"property": "description",
+				"content": "A simple system to keep track of pronouns — and genders — with JavaScript and TypeScript. pronouns.js is a simple and lightweight JavaScript library for managing and creating pronouns. Now supporting custom pronouns! I got carried away one day and now this library also has genders."
+			},
+			{
+				"property": "og:description",
+				"content": "A simple system to keep track of pronouns — and genders — with JavaScript and TypeScript. pronouns.js is a simple and lightweight JavaScript library for managing and creating pronouns. Now supporting custom pronouns! I got carried away one day and now this library also has genders."
+			},
+			{
+				"property": "og:url",
+				"content": "https://pronounsjs.akpi816218.repl.co/"
+			},
+			{
+				"property": "og:image",
+				"content": "https://raw.githubusercontent.com/akpi816218/pronouns.js/gitmaster/files/pronouns.js_logo.svg"
 			}
 		],
 		"server": "static",
