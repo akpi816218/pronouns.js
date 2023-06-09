@@ -1,5 +1,6 @@
 {
-	"author": "Akhil Pillai",
+	"author": "Akhil Pillai <816218@seq.org>",
+	"browser": "dist/webpack.js",
 	"bugs": {
 		"url": "https://github.com/akpi816218/pronouns.js/issues"
 	},
@@ -9,14 +10,22 @@
 			"name": "Akhil Pillai"
 		}
 	],
+	"dependencies": {
+		"@types/eslint": "^8.40.1",
+		"@typescript-eslint/eslint-plugin": "^5.59.9",
+		"eslint": "^8.42.0"
+	},
 	"description": "A simple pronoun and gender system for JS & TS, including support for custom pronouns.",
 	"devDependencies": {
 		"@types/node": "^20.2.5",
 		"docma": "^3.2.2",
+		"esbuild": "^0.17.19",
 		"prettier": "^2.8.8",
-		"typescript": "^5.1.3"
+		"typescript": "^5.1.3",
+		"webpack-cli": "^5.1.4"
 	},
 	"homepage": "https://github.com/akpi816218/pronouns.js#readme",
+	"jsdelivr": "dist/webpack.js",
 	"keywords": [
 		"pronoun",
 		"pronouns",
@@ -42,20 +51,17 @@
 	},
 	"scripts": {
 		"build": "npm run compile && npm run docs:build",
-		"compile": "npm run format && \\rm -drf dist && npx tsc",
+		"compile": "npm run format && \\rm -drf dist && npx tsc && npm run webpack",
 		"docs:build": "\\rm -drf docs ; npx docma -c docma.config.jsonc",
 		"docs:dev": "npm run docs:build && npm run docs:serve",
 		"docs:serve": "npx docma serve docs",
 		"format": "npx prettier -w .",
 		"lint": "npx tsx eslint.ts",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"webpack": "npx webpack -c webpack.config.js"
 	},
 	"type": "module",
 	"types": "types/index.d.ts",
-	"version": "3.2.4",
-	"dependencies": {
-		"@types/eslint": "^8.40.0",
-		"@typescript-eslint/eslint-plugin": "^5.59.8",
-		"eslint": "^8.42.0"
-	}
+	"unpkg": "dist/webpack.js",
+	"version": "3.2.4"
 }
