@@ -63,5 +63,5 @@
 	"type": "module",
 	"types": "types/index.d.ts",
 	"unpkg": "dist/webpack.js",
-	"version": "3.2.4"
+	"version": "3.3.0"
 }
