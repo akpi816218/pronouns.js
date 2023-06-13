@@ -1,6 +1,10 @@
-import { Pronoun, PronounCodes } from '../../dist/index.js';
+import { Pronoun, isPronounObject } from 'pronouns.js';
 
-const json = new Pronoun(PronounCodes.theyThem).toJSON();
+const obj = {
+	code: 'They/Them',
+	custom: false
+};
+const json = Pronoun.fromJSON(obj).toJSON();
 // eslint-disable-next-line no-console
 console.log(json);
 // eslint-disable-next-line no-console

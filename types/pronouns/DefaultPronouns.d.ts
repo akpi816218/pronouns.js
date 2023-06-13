@@ -12,9 +12,9 @@ import { Pronoun } from './Pronoun.js';
  * @property {Pronoun} theyThem - The pronoun "they/them"
  */
 export declare namespace DefaultPronouns {
-    const any: Pronoun;
-    const heHim: Pronoun;
-    const other: Pronoun;
-    const sheHer: Pronoun;
-    const theyThem: Pronoun;
+	const any: Pronoun;
+	const heHim: Pronoun;
+	const other: Pronoun;
+	const sheHer: Pronoun;
+	const theyThem: Pronoun;
 }

@@ -3,7 +3,13 @@ import { PronounCodes } from './PronounCodes.js';
  * A type for a code that can be a PronounCode or a custom pronoun
  * @typedef {PronounCodes | string} PronounCode
  */
-export type PronounCode = PronounCodes | 'Any' | 'He/Him' | 'Other' | 'She/Her' | 'They/Them';
+export type PronounCode =
+	| PronounCodes
+	| 'Any'
+	| 'He/Him'
+	| 'Other'
+	| 'She/Her'
+	| 'They/Them';
 /**
  * A type for a value that can be a PronounCode or a custom pronoun
  * @typedef {PronounCode | string} PronounValue
@@ -14,9 +20,9 @@ export type PronounValue = PronounCode | string;
  * @interface PronounObject
  */
 export interface PronounObject {
-    code: PronounCode;
-    custom: boolean;
-    value?: PronounValue;
+	code: PronounCode;
+	custom: boolean;
+	value?: PronounValue;
 }
 /**
  * Determine if a string is a PronounCode

@@ -1,4 +1,5 @@
 import {
+	PronounCode,
 	type PronounObject,
 	type PronounValue,
 	isPronounCode,
@@ -16,6 +17,7 @@ export {
 	isPronounObject,
 	isPronounValue,
 	Pronoun,
+	PronounCode,
 	PronounCodes,
 	type PronounObject,
 	type PronounValue

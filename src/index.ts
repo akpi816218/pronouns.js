@@ -3,6 +3,7 @@
 import {
 	DefaultPronouns,
 	Pronoun,
+	PronounCode,
 	PronounCodes,
 	type PronounObject,
 	type PronounValue,
@@ -17,6 +18,7 @@ export {
 	Gender,
 	GenderCodes,
 	Pronoun,
+	PronounCode,
 	PronounCodes,
 	type PronounObject,
 	type PronounValue,

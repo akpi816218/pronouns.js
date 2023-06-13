@@ -22,7 +22,9 @@ I got carried away one day and now this library also has genders.
 
 Contibutions welcome.
 
-The documentation is available [here](/?api). Built using [Docma](https://onury.io/docma).
+The programmatic (API) documentation is available [here](/?api). Built using [Docma](https://onury.io/docma). For browser usage, see the "browser" section below.
+
+For examples, see the `examples/` folder.
 
 ## Installation
 
@@ -30,6 +32,33 @@ Install from NPM. Type definitions are included for you TypeScript people (inclu
 
 ```bash
 $ npm i pronouns.js
+```
+
+## Browser functionality
+
+You may use any one of the following imports:
+
+```html
+<!--
+	Recommended for production - does not rely on a CDN, fixed version
+	You must download the minified webpack.js file from the GitHub repository and then include it like so
+ -->
+<script src="../dist/webpack.js"></script>
+<!--
+	Recommended for testing and development
+	"https://unpkg.com/pronouns.js" automatically redirects to the specified file of the latest version
+	i.e. "https://unpkg.com/pronouns.js@3.3.0/dist/webpack.js"
+	you may use tag @latest to select the latest version (i.e. "https://unpkg.com/pronouns.js@latest")
+	For production, it is HIGHLY RECOMMENDED you use a fixed version.
+ -->
+<script src="https://unpkg.com/pronouns.js"></script>
+<!--
+	Secondary CDN - not tested
+	"https://cdn.jsdelivr.net/npm/pronouns.js" serves latest version, default file
+	add version tag similar to unpkg for a specified version
+	For production, it is HIGHLY RECOMMENDED you use a fixed version.
+ -->
+<script src="https://cdn.jsdelivr.net/npm/pronouns.js@latest/dist/webpack.js"></script>
 ```
 
 ## Support

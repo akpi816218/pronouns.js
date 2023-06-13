@@ -51,11 +51,11 @@
 	},
 	"scripts": {
 		"build": "npm run compile && npm run docs:build",
-		"compile": "npm run format && \\rm -drf dist && npx tsc && npm run webpack",
+		"compile": "\\rm -drf dist types && npx tsc && npm run format && npm run webpack",
 		"docs:build": "\\rm -drf docs ; npx docma -c docma.config.jsonc",
 		"docs:dev": "npm run docs:build && npm run docs:serve",
 		"docs:serve": "npx docma serve docs",
-		"format": "npx prettier -w .",
+		"format": "npx prettier -w ./*.* src types",
 		"lint": "npx tsx eslint.ts",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"webpack": "npx webpack -c webpack.config.js"
@@ -63,5 +63,5 @@
 	"type": "module",
 	"types": "types/index.d.ts",
 	"unpkg": "dist/webpack.js",
-	"version": "3.3.0"
+	"version": "3.3.1"
 }

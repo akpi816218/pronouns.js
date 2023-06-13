@@ -20,11 +20,35 @@
 <p>A simple and lightweight JavaScript library for managing and creating pronouns. <strong><em>Supports custom pronouns!</em></strong>
 I got carried away one day and now this library also has genders.</p>
 <p>Contibutions welcome.</p>
-<p>The documentation is available <a href="/?api">here</a>. Built using <a href="https://onury.io/docma">Docma</a>.</p>
+<p>The programmatic (API) documentation is available <a href="/?api">here</a>. Built using <a href="https://onury.io/docma">Docma</a>. For browser usage, see the "browser" section below.</p>
+<p>For examples, see the <code>examples/</code> folder.</p>
 <h2 id="installation">Installation</h2>
 <hr />
 <p>Install from NPM. Type definitions are included for you TypeScript people (including me), so there's no need to try and install <code>@types/pronouns.js</code> as a devDependency — it probably doesn't exist anyways.</p>
 <pre><code class="bash">$ npm i pronouns.js</code></pre>
+<h2 id="browser-functionality">Browser functionality</h2>
+<hr />
+<p>You may use any one of the following imports:</p>
+<pre><code class="html">&lt;!--
+    Recommended for production - does not rely on a CDN, fixed version
+    You must download the minified webpack.js file from the GitHub repository and then include it like so
+ --&gt;
+&lt;script src="../dist/webpack.js"&gt;&lt;/script&gt;
+&lt;!--
+    Recommended for testing and development
+    "https://unpkg.com/pronouns.js" automatically redirects to the specified file of the latest version
+    i.e. "https://unpkg.com/pronouns.js@3.3.0/dist/webpack.js"
+    you may use tag @latest to select the latest version (i.e. "https://unpkg.com/pronouns.js@latest")
+    For production, it is HIGHLY RECOMMENDED you use a fixed version.
+ --&gt;
+&lt;script src="https://unpkg.com/pronouns.js"&gt;&lt;/script&gt;
+&lt;!--
+    Secondary CDN - not tested
+    "https://cdn.jsdelivr.net/npm/pronouns.js" serves latest version, default file
+    add version tag similar to unpkg for a specified version
+    For production, it is HIGHLY RECOMMENDED you use a fixed version.
+ --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/pronouns.js@latest/dist/webpack.js"&gt;&lt;/script&gt;</code></pre>
 <h2 id="support">Support</h2>
 <hr />
 <p>There is no support for CJS modules (<code>require()</code>). Use ESM instead (<code>import ... from ...</code>). If it works for one version, that's a coincidence. There is no intended support for CommonJS modules, only the modular syntax introduced in ES6. See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN's JavaScript module guide</a>.</p>

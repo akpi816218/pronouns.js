@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +12,11 @@
 		<!-- or: -->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/pronouns.js"></script> -->
 		<script>
+			// Object destructuring: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 			const { Gender, GenderCodes } = window.PronounsJS;
 			alert(
 				JSON.stringify(new Gender(GenderCodes.agender).toJSON(), undefined, 2)
 			);
 		</script>
 	</body>
-
 </html>
