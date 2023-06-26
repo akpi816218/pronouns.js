@@ -57,7 +57,7 @@
 		"docs:serve": "npx docma serve docs",
 		"format": "npx prettier -w ./*.* src types",
 		"lint": "npx tsx eslint.ts",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "echo \"Error: no test specified\"",
 		"webpack": "npx webpack -c webpack.config.js"
 	},
 	"type": "module",
