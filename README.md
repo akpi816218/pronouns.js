@@ -11,7 +11,7 @@
 ![license-npm](https://img.shields.io/npm/l/pronouns.js?logo=npm)
 ![npm-types](https://img.shields.io/npm/types/pronouns.js?logo=npm)
 [![github-latest-commit](https://img.shields.io/github/last-commit/akpi816218/pronouns.js?logo=github)](https://github.com/akpi816218/pronouns.js/commits/gitmaster)
-[![github-release](https://img.shields.io/github/v/release/akpi816218/pronouns.js?logo=github) ![github-stars](https://img.shields.io/github/stars/akpi816218/pronouns.js?style=social)](https://github.com/akpi816218/pronouns.js)
+[![github-release](https://img.shields.io/github/v/release/akpi816218/pronouns.js?logo=github)](https://github.com/akpi816218/pronouns.js/releases/latest) [![github-stars](https://img.shields.io/github/stars/akpi816218/pronouns.js?style=social)](https://github.com/akpi816218/pronouns.js)
 
 A simple system to keep track of pronouns — and genders — with JavaScript and TypeScript.
 
